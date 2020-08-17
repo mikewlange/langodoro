@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Langodoro</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>		
+	<div class="box">
+		<h1 class="title">Langodoro</h1>
+		<ul class = "nav nav-tabs" >
+			<li class="active"><a data-toggle="tab" href="#timer"  >Timer</a></li>
+			<li><a data-toggle="tab" href="#setting"  >Setting</a></li>
+		</ul>
+
+		<div class="tab-content ">
+			<div id="timer" class="tab-pane fade in active timer" >
+				<div class="running_state"></div>
+				<div class="time">
+					<span class="minutes"></span>
+					<span class="separator">:</span>
+					<span class="second"></span>
+					<br/>
+					<input type="button" name="start" value="Run" />
+					<input type="button" name="stop" value="Reset" />
+					<input type="button" name="pause" value="Pause" />
+					<br/>
+					<br/>
+					<progress id="progress" value="" max=""></progress>
+				</div>
+				<div class="statistic">
+					Total Session: <span  class="info_session">0</span>
+					<br/>
+					Total Break: <span  class="info_break">0</span>
+					<br/>
+					Total Pomodoro Cycle: <span  class="info_pomodoro">0</span>
+					<br/>
+				</div>
+			</div>
+
+			<div id="setting" class="tab-pane fade setting" >
+				<span>Session Duration : </span> <input class="parameter" type="text" disabled="disabled"/> Minutes <input class="slider" type="range" id="sd" min="1" max="60"/> <br/>
+				<span>Break Duration : </span> <input  class="parameter" type="text" disabled="disabled"/> Minutes <input  class="slider" type="range" id="bd" min="1" max="60"/> <br/>
+				<span>Rest Duration : </span> <input  class="parameter" type="text" disabled="disabled"/> Minutes <input class="slider"  type="range" id="rd" min="1" max="60"/> <br/>
+				<span>Pomodoro Cycle : </span> <input  class="parameter" type="text" disabled="disabled"/> Sessions <input  class="slider" type="range" id="sbr" min="1" max="10"/> <br/>
+				<input type="button" name="reset" value="Default" />
+				<!-- <input type="button" name="save" value="Save" /> -->			
+			</div>
+
+
+		</div>
+	</div>
+	<br/>
+	<div class="text-center" style="color:black" <a style="color:black;" href='https://codepen.io/risyana/'></a></div>	
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

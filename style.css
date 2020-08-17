@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+		body{
+			background-color: #a5a5a5;
+		}
+
+		div.box{
+			background-color: #c60509;
+			color: white;
+			margin: auto;
+			margin-top: 10px;
+			border:solid #8c0103 1px;
+			border-top:solid #8c0103 0px;
+			width: 259px;
+			height: 450px;
+			padding:10px;
+			box-shadow: inset 1px 1px 10px 0px rgba(0, 0, 0, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+			border-radius: 5px;
+		}
+
+		div.setting, div.timer{
+			border:solid #e0e0e0 1px;
+			border-top:solid #e0e0e0 0px;
+			padding:10px;
+		}
+
+		input.slider{
+			width: 210px;
+		}
+
+		input.parameter{
+			width: 30px;
+			height:  20px;
+			text-align: right;
+			background-color: white;
+			border: 0px;
+		}
+
+		div.time{
+			text-align: center;
+			padding: 1px;
+			background-color: white;
+		}
+
+		div.timer, div.setting{
+			background-color: white;
+			color: black;
+		}
+
+		span.minutes, span.separator{
+			font-size: 80px;
+		}
+
+		span.second{
+			font-size: 80px;
+		}
+
+		#progress{
+			width: 210px;
+			height: 10px;
+		}
+
+		.title{
+			font-family: 'Pacifico', cursive;
+			text-align: center;
+			font-size: 50px;
+		}
+
+		input[type='button']:disabled{
+			color: #c9c9c9;
+		}
+
+		input[type='button']{
+			width: 60px;
+			box-shadow:  1px 1px 2px 0px rgba(0, 0, 0, 0.5);	
+		}
+
+		.running_state{
+			height: 20px;
+			text-align: center;
+		}
+
+		a{
+			color: white;
+		}
